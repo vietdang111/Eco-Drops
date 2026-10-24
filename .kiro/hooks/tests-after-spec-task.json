@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Tests After Spec Task",
+      "trigger": "PostTaskExec",
+      "description": "Runs the invariant and integration suite after each completed spec task.",
+      "action": {
+        "type": "command",
+        "command": "npm test",
+        "timeout": 300
+      }
+    }
+  ]
+}

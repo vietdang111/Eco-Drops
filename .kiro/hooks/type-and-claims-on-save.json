@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Type and Climate Claims Guard",
+      "trigger": "PostFileSave",
+      "description": "Type-checks TypeScript and rejects overclaimed climate language after source saves.",
+      "matcher": "\\.(ts|tsx)$",
+      "action": {
+        "type": "command",
+        "command": "npm run typecheck && npm run check:claims",
+        "timeout": 180
+      }
+    }
+  ]
+}

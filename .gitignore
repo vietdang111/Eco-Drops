@@ -1,0 +1,28 @@
+# Dependencies and build output
+node_modules/
+.next/
+out/
+coverage/
+
+# Local runtime data
+data/*.db
+data/*.db-*
+uploads/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs and editor files
+*.log
+.DS_Store
+.vscode/
+
+# TypeScript
+*.tsbuildinfo
+
+# Keep Hackathon-required Kiro artifacts tracked
+!.kiro/
+!.kiro/**

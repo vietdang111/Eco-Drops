@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Factor Integrity on Stop",
+      "trigger": "Stop",
+      "description": "Validates factor ordering, rates, HTTPS provenance, and no-answer assumptions when an agent run stops.",
+      "action": {
+        "type": "command",
+        "command": "npm run check:factors",
+        "timeout": 120
+      }
+    }
+  ]
+}

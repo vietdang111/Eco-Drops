@@ -1,0 +1,49 @@
+{
+  "name": "eco-drops",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Verified surplus-to-campus reuse platform for Hackachusetts Climate Tech & Clean Energy.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:property": "vitest run tests/property",
+    "check:claims": "tsx scripts/check-claims.ts",
+    "check:factors": "tsx scripts/check-factors.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "sample:invoice": "tsx scripts/generate-sample-invoice.ts",
+    "db:seed": "tsx scripts/seed.ts",
+    "db:reset": "tsx scripts/reset-db.ts",
+    "check": "npm run lint && npm run typecheck && npm run check:claims && npm run check:factors && npm test && npm run smoke && npm run build"
+  },
+  "dependencies": {
+    "better-sqlite3": "13.0.3",
+    "next": "16.4.3",
+    "pdf-lib": "1.17.1",
+    "qrcode": "1.5.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "9.6.0",
+    "@types/node": "26.6.5",
+    "@types/qrcode": "1.5.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.3",
+    "fast-check": "4.10.2",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "5.0.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "npm@10.9.3",
+  "license": "MIT"
+}

@@ -56,7 +56,7 @@ Instead of testing only happy-path examples, fast-check generates inputs for sys
 - **audit:** intact chains plus payload/hash/link tampering and first-broken-event reporting; and
 - **service and HTTP:** checkout idempotency, bounded anonymous weekly claims, exact five-field public projection, successful signup, and structured 400/401/404/409/422 route errors.
 
-A separate integration suite checks red-tier and certification gates, cross-organization privacy, additive schema migration, HS derivation/fail-closed policy, verified-capacity allocations, campus-only receipt, kiosk visibility after receipt, seed cap integrity, and the real Next route boundary. On 2026-10-24, all 8 files / 63 tests passed. Property tests provide strong invariant evidence, but they do not replace browser accessibility checks, production load testing, or external methodology review.
+A separate integration suite checks red-tier shipping/certification blocks, cross-organization privacy, seed cap integrity, and the real Next route boundary. On 2026-10-24, all 6 files / 46 tests passed. Property tests provide strong invariant evidence, but they do not replace browser accessibility checks, production load testing, or external methodology review.
 
 ## MCP and AppDeploy Power exploration
 

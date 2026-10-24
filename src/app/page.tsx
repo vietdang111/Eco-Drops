@@ -20,8 +20,8 @@ export default function HomePage() {
                 <span>Climate tech · circular access</span>
                 <SourceLabel kind="simulated">Hackathon demo</SourceLabel>
               </div>
-              <h1>Surplus should<br />land <em>somewhere useful.</em></h1>
-              <p className="hero__lede">EcoDrops moves functional corporate surplus through independent receiving and into campus inventory—then makes each assumption, handoff, and outcome legible.</p>
+              <h1>Surplus should<br />land <em>somewhere useful, not landfills.</em></h1>
+              <p className="hero__lede">EcoDrops moves functional corporate surplus through independent receiving and into campus inventory, then makes each assumption, handoff, and outcome legible.</p>
               <div className="button-row">
                 <Link className="button button--accent" href="/signup">Register surplus <Arrow /></Link>
                 <Link className="button button--ghost" href="/kiosk">Find a campus item <Arrow /></Link>

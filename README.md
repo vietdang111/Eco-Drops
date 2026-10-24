@@ -2,17 +2,19 @@
 
 EcoDrops is a hackathon demonstration of a surplus-to-campus reuse loop: a corporate partner registers safe, functional goods; an independent warehouse reconciles custody and weight; a campus kiosk matches inventory without student accounts; and EcoDrops publishes transparent low/base/high **estimated avoided-emissions** records with explicit assumptions and a privacy-minimized public verifier. **Hackathon track: Climate Tech & Clean Energy.**
 
-## Live Demo and Demo Video
-
-- **Live Demo:** `TO ADD BEFORE SUBMISSION`
-- **Demo Video:** `TO ADD BEFORE SUBMISSION`
-
 No public URL is claimed in this repository yet.
 
 ## Demo access
+TLDR:
+* Run these in the terminal:
+npm ci
+cp .env.example .env.local
+npm run db:seed
+npm run dev
 
-Open [http://localhost:3000/login](http://localhost:3000/login). Each card signs in with one click; all four synthetic accounts share `DemoPass!2026`.
+--> Open [http://localhost:3000/login](http://localhost:3000/login). Each card signs in with one click; all four synthetic accounts share `DemoPass!2026`.
 
+--------------------------------------------------------------
 | Demo role | Email | Password | What to inspect |
 | --- | --- | --- | --- |
 | Corporate (`corp_user`) | `corp@demo.ecodrops.local` | `DemoPass!2026` | Batch intake, risk gates, custody, estimates |
